@@ -18,6 +18,12 @@ appointments = [
     {"id": 3, "patient_id": 1, "date": "2025-07-10", "time": "09:15 AM", "doctor": "Dr. Smith"},
 ]
 
+medications = [
+    {"id": 1, "patient_id": 1, "name": "Atorvastatin", "dose": "10mg", "frequency": "Once daily"},
+    {"id": 2, "patient_id": 2, "name": "Metformin", "dose": "500mg", "frequency": "Twice daily"},
+    {"id": 3, "patient_id": 1, "name": "Albuterol", "dose": "2 puffs", "frequency": "As needed"},
+]
+
 @app.get("/patients")
 def get_patients():
     return {"patients": patients}
@@ -32,3 +38,21 @@ def get_patient_by_id(patient_id: int):
 @app.get("/appointments")
 def get_appointments():
     return {"appointments": appointments}
+
+@app.get("/appointments/{appointment_id}")
+def get_appointment_by_id(appointment_id: int):
+    for appointment in appointments:
+        if appointment["id"] == appointment_id:
+            return appointment
+    return {"error": "Appointment not found"}
+
+@app.get("/medications")
+def get_medications():
+    return {"medications": medications}
+
+@app.get("/medications/{medication_id}")
+def get_medication_by_id(medication_id: int):
+    for medication in medications:
+        if medication["id"] == medication_id:
+            return medication
+    return {"error": "Medication not found"}
