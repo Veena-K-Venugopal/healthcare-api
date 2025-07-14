@@ -24,6 +24,8 @@ medications = [
     {"id": 3, "patient_id": 1, "name": "Albuterol", "dose": "2 puffs", "frequency": "As needed"},
 ]
 
+# -------------- Patients --------------
+
 @app.get("/patients")
 def get_patients():
     return {"patients": patients}
@@ -35,6 +37,8 @@ def get_patient_by_id(patient_id: int):
             return patient
     return {"error": "Patient not found"}
 
+# ------------ Appointments ------------
+
 @app.get("/appointments")
 def get_appointments():
     return {"appointments": appointments}
@@ -45,6 +49,8 @@ def get_appointment_by_id(appointment_id: int):
         if appointment["id"] == appointment_id:
             return appointment
     return {"error": "Appointment not found"}
+
+# ------------ Medications ------------
 
 @app.get("/medications")
 def get_medications():
