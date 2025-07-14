@@ -42,3 +42,13 @@ pip install -r requirements.txt
 
 # Run the app
 uvicorn main:app --reload
+
+```
+
+## 🔗 Live Demo
+
+[https://healthcare-api-2c8b.onrender.com/](https://healthcare-api-2c8b.onrender.com/)
+
+- `/patients`
+- `/appointments`
+- `/docs` (Swagger UI)
