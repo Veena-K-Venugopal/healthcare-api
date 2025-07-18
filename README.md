@@ -69,4 +69,4 @@ uvicorn app.main:app --reload
 - `/predict`
 - `/docs` (Swagger UI)
 
-[View the project roadmap](roadmap.md)
+📌 Roadmap available upon request — contact vkvenu10@gmail.com
