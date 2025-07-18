@@ -38,16 +38,6 @@ This project is designed for learning, backend development practice, and demonst
 
 ---
 
-## ✅ Project Enhancements – Phase 1 Complete
-
-- Refactored codebase into modular structure (`app/`, `routes/`, `services/`, `utils/`)
-- Added `POST /predict` endpoint with mock ML prediction logic
-- Implemented output enhancement for future integration with real AI/ML models
-- Input validated using Pydantic
-- Swagger UI now includes all active endpoints
-
----
-
 ## 📦 How to Run Locally
 
 ```bash
@@ -78,3 +68,5 @@ uvicorn app.main:app --reload
 - `/appointments`
 - `/predict`
 - `/docs` (Swagger UI)
+
+[View the project roadmap](roadmap.md)
