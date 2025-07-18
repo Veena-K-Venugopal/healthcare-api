@@ -24,7 +24,17 @@ This project is designed for learning, backend development practice, and demonst
 - **Backend**: Python, FastAPI  
 - **Server**: Uvicorn (ASGI)  
 - **Dev Tools**: VS Code, Git, GitHub  
-- **Deployment**: Coming soon on [Render](https://render.com/)
+- **Deployment**: Live on [Render](https://healthcare-api-2c8b.onrender.com/)
+
+---
+
+## ✅ Project Enhancements – Phase 1 Complete
+
+- Refactored codebase into modular structure (`app/`, `routes/`, `services/`, `utils/`)
+- Added `POST /predict` endpoint with mock ML prediction logic
+- Implemented output enhancement for future integration with real AI/ML models
+- Input validated using Pydantic
+- Swagger UI now includes all active endpoints
 
 ---
 
@@ -42,7 +52,7 @@ This project is designed for learning, backend development practice, and demonst
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/healthcare-api.git
+git clone https://github.com/Veena-K-Venugopal/healthcare-api.git
 cd healthcare-api
 
 # Create virtual environment
@@ -62,7 +72,7 @@ uvicorn app.main:app --reload
 
 ## 🔗 Live Demo
 
-[https://healthcare-api-2c8b.onrender.com/](https://healthcare-api-2c8b.onrender.com/)
+[Render](https://healthcare-api-2c8b.onrender.com/)
 
 - `/patients`
 - `/appointments`
