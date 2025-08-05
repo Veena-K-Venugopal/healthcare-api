@@ -1,3 +1,4 @@
 venv/
 __pycache__/
 codealike.json
+app/model_training/heart_disease_uci.csvapp/model/*.pkl
