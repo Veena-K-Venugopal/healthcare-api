@@ -4,3 +4,4 @@ codealike.json
 app/model_training/heart_disease_uci.csvapp/model/*.pkl
 app/model_training/heart_disease_uci.csv
 app/model/*.pkl
+NOTES.md
